@@ -12,6 +12,7 @@ expression_label = tk.Label(root, textvariable=expression_var, font=("Helvetica"
 expression_label.grid(row=0, column=0, columnspan=4, sticky="nsew")
 
 # 定义按钮点击事件
+# 包含了三角函数和普通加减乘除和指数的定义
 def button_click(event):
     current_expression = expression_var.get()
     button_text = event.widget.cget("text")
@@ -60,7 +61,7 @@ button_texts = [
     "7", "8", "9", "-",
     "4", "5", "6", "*",
     "1", "2", "3", "/",
-    "C", "0", "=", "^"  # 新增的按钮
+    "C", "0", "=", "^"  
 ]
 
 row_val = 1
@@ -75,11 +76,9 @@ for button_text in button_texts:
         col_val = 0
         row_val += 1
 
-# 使按钮自动调整大小
 for i in range(4):
     root.grid_columnconfigure(i, weight=1)
 for i in range(5):
     root.grid_rowconfigure(i, weight=1)
 
-# 运行主循环
 root.mainloop()
