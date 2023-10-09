@@ -1,0 +1,40 @@
+/* pages/index/index.wxss */
+.op{
+    min-height: 220rpx;
+    display: flex;
+    flex-direction: column;
+    text-align:right ;
+    justify-content: flex-end;
+    background-color:rgb(228, 250, 252);
+    font-size: 48rpx;
+  }
+  
+  .info{
+    text-align:right ;
+    background-color:rgb(228, 250, 252);
+    font-size: 150rpx;
+    color: rgb(101, 173, 255);
+  }
+  .button{
+    background-color: rgb(230, 253, 213);
+    border-right: solid 1px rgb(255, 255, 255);
+    border-left: solid 1px rgb(255, 255, 255);
+    font-size: 50rpx;
+    color: rgb(186, 226, 252);
+  }
+  .button > view{
+    display: flex;
+  }
+  .button > view > view{
+    flex: 1;
+    text-align: center;
+    height: 175rpx;
+    line-height: 175rpx; 
+    outline:solid 1px rgb(244, 255, 217);
+    margin: -1px 0 0 -1px;
+  } 
+  .button > view > view.long{
+    flex: 2;
+    margin-right: 5px;
+    border-right: none;
+  }

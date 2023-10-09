@@ -1,0 +1,59 @@
+
+<view class="op">
+{{sign}}{{num1}}{{op}}{{num2}}{{equals}}
+</view>
+
+<view class="info">
+<text>{{numStr}}</text>
+
+</view>
+
+<view class="button">
+  <view>
+    <view class="long" bindtap="clear">C</view>
+    <view bindtap="del">Del</view>
+    <view bindtap="tri"
+    data-tri="ln">ln</view>
+</view>
+<view>
+    <view bindtap="tri"
+    data-tri="sin">sin</view>
+    <view bindtap="tri"
+    data-tri="cos">cos</view>
+    <view bindtap="tri"
+    data-tri="tan">tan</view>
+    <view bindtap="op"
+    data-op="÷">÷</view>
+</view>
+<view>
+    <view bindtap="numBtn" 
+    data-num="{{item}}"
+    wx:key="this"
+    wx:for="789">{{item}}</view>
+    <view bindtap="op"
+    data-op="×">×</view>
+</view>
+<view>
+  <view bindtap="numBtn" 
+    data-num="{{item}}"
+    wx:key="this"
+    wx:for="456">{{item}}</view>
+    <view bindtap="op"
+    data-op="-">-</view>
+</view>
+<view>
+  <view bindtap="numBtn" 
+    data-num="{{item}}"
+    wx:key="this"
+    wx:for="123">{{item}}</view>
+    <view bindtap="op"
+    data-op="+">+</view>
+</view>
+<view>
+    <view class="long"
+    bindtap="zero"
+    data-num="0">0</view>
+    <view bindtap="point">.</view>
+    <view bindtap="cal" >=</view>
+</view>
+</view>
